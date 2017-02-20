@@ -8,15 +8,19 @@
     "displayName": "watchface", 
     "name": "watchface", 
     "messageKeys": {
-        "dummy": 10000
+        "CONDITIONS": 10001, 
+        "TEMPERATURE": 10000
     }, 
     "companyName": "MakeAwesomeHappen", 
     "enableMultiJS": true, 
     "versionLabel": "1.0", 
-    "capabilities": [], 
+    "capabilities": [
+        "location"
+    ], 
     "sdkVersion": "3", 
     "appKeys": {
-        "dummy": 10000
+        "CONDITIONS": 10001, 
+        "TEMPERATURE": 10000
     }, 
     "longName": "watchface", 
     "shortName": "watchface", 
@@ -24,7 +28,25 @@
         "watchface": true
     }, 
     "resources": {
-        "media": []
+        "media": [
+            {
+                "type": "font", 
+                "name": "FONT_PERFECT_DOS_48", 
+                "file": "fonts/perfect-dos-vga.ttf", 
+                "compatibility": "2.7"
+            }, 
+            {
+                "type": "font", 
+                "name": "FONT_PERFECT_DOS_20", 
+                "file": "fonts/perfect-dos-vga.ttf", 
+                "compatibility": "2.7"
+            }, 
+            {
+                "type": "bitmap", 
+                "name": "IMAGE_BACKGROUND", 
+                "file": "images/background.png"
+            }
+        ]
     }, 
     "uuid": "e8804d17-deef-4790-983b-315132435526"
 }
